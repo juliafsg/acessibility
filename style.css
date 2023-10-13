@@ -1,0 +1,153 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding-top: 20px;
+}
+
+/* px = absolute value */
+.div-one {
+  font-size: 40px;
+}
+
+/* rem = multiple of root font-size */
+.div-two {
+  font-size: 1rem;
+}
+
+/* em = multiple of element font-size */
+.div-three {
+  font-size: 1em;
+}
+
+main,
+header,
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+footer {
+  background-color: #f4f4f4;
+  min-height: 100px;
+}
+
+h1,
+h2,
+p {
+  margin: 10px;
+}
+
+#accessibility-img {
+  min-width: 200px;
+  min-height: 200px;
+  align-self: center;
+}
+
+#principles-section {
+  background-color: #eef6f8;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  max-width: -webkit-fill-available;
+  width: 100%;
+}
+
+#actions-section {
+  flex-direction: column;
+  align-items: center;
+  max-width: -webkit-fill-available;
+  width: 100%;
+}
+
+#actions-section ol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding-inline-start: 0;
+  list-style-type: none;
+}
+
+h3 {
+  font-size: 5em;
+  margin-block: 0;
+  letter-spacing: 0.2em;
+}
+
+#accessibility-description {
+  margin-top: 10px;
+  max-width: 400px;
+}
+
+.principle-item {
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+}
+
+.principle-item img {
+  align-self: center;
+  width: 100px;
+  height: 100px;
+}
+
+.principle-item p {
+  margin: 0.2em;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+li p:first-child {
+  font-weight: bold;
+}
+
+li img {
+  width: 350px;
+  max-width: calc(100vw - 20px);
+  padding: 10px;
+  align-self: center;
+}
+
+li p:nth-child(2) {
+  max-width: 350px;
+  background-color: #eef6f8;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+figcaption {
+  font-size: smaller;
+  align-self: center;
+}
+@media (max-width: 800px) {
+  section {
+    flex-direction: column;
+  }
+
+  h1 {
+    max-width: 400px;
+    align-self: start;
+  }
+
+  #actions-section ol {
+    grid-template-columns: 1fr;
+  }
+}

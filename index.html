@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Web Acessibility</title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Building acessible webpages</h1>
+    </header>
+    <main>
+      <section>
+        <div>
+          <h2>What is accessibility?</h2>
+          <p id="accessibility-description">
+            Accessibility means making digital content and technology available
+            to all, regardless of their abilities. Prioritizing accessibility
+            creates a more inclusive and user-friendly experience for everyone,
+            not just those with disabilities. It also benefits those with
+            temporary impairments and situational limitations.
+          </p>
+        </div>
+        <img
+          id="accessibility-img"
+          alt="web acessibility logo"
+          src="./images/accessibility.png"
+          width="200px"
+          height="200px"
+        />
+      </section>
+
+      <section id="principles-section">
+        <h2>Principles of accessibility</h2>
+        <h3>POUR</h3>
+        <div class="container">
+          <div class="principle-item">
+            <img
+              alt="eye illustration"
+              src="./images/eye.png"
+              width="100px"
+              height="100px"
+            />
+            <p><strong>P</strong>ercivable</p>
+            <p>Available to the senses(vision and hearing)</p>
+          </div>
+          <div class="principle-item">
+            <img alt="click illustration" src="./images/click.png" />
+            <p><strong>O</strong>perable</p>
+            <p>
+              Possible to interact with all controls and interactive elements
+            </p>
+          </div>
+          <div class="principle-item">
+            <img alt="ear illustration" src="./images/ear.png" />
+            <p><strong>U</strong>nderstandable</p>
+            <p>
+              Try as much as possible to reduce spelling errors and use complex
+              language
+            </p>
+          </div>
+          <div class="principle-item">
+            <img alt="brain illustration" src="./images/brain.png" />
+            <p><strong>R</strong>obust</p>
+            <p>Consistency across different platforms and languages</p>
+          </div>
+        </div>
+      </section>
+      <section id="actions-section">
+        <h2>What developers and designers can do?</h2>
+        <ol>
+          <li>
+            <p>1. Semantic HTML</p>
+            <p>
+              Adding semantic HTML tags provides additional information to
+              define <b>roles</b> and importance of page components.
+            </p>
+            <img alt="code of semantic html" src="./images/semantic-html.png" />
+            <figcaption>(example of code with semantic tags)</figcaption>
+
+            <img
+              alt="code of non semantic html"
+              src="./images/no-semantic-html.png"
+            />
+            <figcaption>(example of code with only div tags)</figcaption>
+          </li>
+          <li>
+            <p>2. Colors</p>
+            <p>
+              Ensure good <b>contrast</b> between colors and make sure to don't
+              just use colors to denote meaning.
+            </p>
+
+            <img
+              alt="print screen of text with contrast"
+              src="./images/contrast.png"
+            />
+            <figcaption>(example of text with good contrast)</figcaption>
+
+            <img
+              alt="print screen of text with no contrast"
+              src="./images/no-contrast.png"
+            />
+            <figcaption>(example of text with bad contrast)</figcaption>
+          </li>
+
+          <li>
+            <p>3. Scalable measures</p>
+            <p>
+              Do not specify the font size in <b>px</b>, or any other absolute
+              unit of measurement. Prefer relative units like <b>rem</b>,
+              <b>em</b> or even <b>percentage</b>.
+            </p>
+          </li>
+
+          <li>
+            <p>4. Description</p>
+            <p>
+              Use the <b>alt</b> and <b>aria-label</b> attributes to add
+              description to images and elements.
+            </p>
+          </li>
+
+          <li>
+            <p>5. Focus management</p>
+            <p>
+              When scrolling through a web page with the keyboard, the user
+              should always be able to tell where she is on the page.
+            </p>
+            <img
+              alt="variants default and hover of button"
+              src="./images/states.png"
+            />
+            <figcaption>(example of button variants)</figcaption>
+          </li>
+
+          <li>
+            <p>6. Use Tools</p>
+            <p>
+              Use free tools to help you indentify acessibility issues. There
+              are libraries such as
+              <a target="_blank" href="https://allyjs.io/index.html">ally.js</a>
+              and browser extensions such as
+              <a
+                target="_blank"
+                href="https://developer.chrome.com/docs/lighthouse/overview/"
+                >ligthouse</a
+              >
+            </p>
+            <img
+              alt="lighthouse acessibility analysis"
+              src="./images/lighthouse.png"
+            />
+            <figcaption>
+              (example of lighthouse acessibility analysis)
+            </figcaption>
+          </li>
+        </ol>
+      </section>
+    </main>
+    <footer>
+      <p>This page was created by: Julia Ferreira</p>
+      <p>Feel free to contact me by email: juliafsouzag@gmail.com</p>
+    </footer>
+  </body>
+</html>
